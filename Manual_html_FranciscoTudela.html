@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<title>Manual html</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+    <h1>Manual HTML Francisco Tudela</h1>
+    <article>
+        <section>
+            <h2>Formato</h2>
+            <p>Lo primero que vamos a poner al principio de nuestra página es el tipo de documento y se indica con esta etiqueta:</p>
+            <pre>
+            &lt;!doctype html&gt;
+            </pre>
+            <p>El formato de una etiqueta es el siguiente:</p>
+            <pre>
+            se coloca un &lt; el nombre de la etiqueta y un &gt;
+            a continuacion se coloca el contenido de esta
+            y se repite el proceso anterior pero añadiendo una contrabarra
+            &lt;/...&gt; para cerrar la etiqueta.
+            </pre>
+            <p>También se pueden añadir atributos a las etiquetas:</p>
+            <pre>
+            &lt;etiqueta atributo="valor"&gt;&lt;/&gt;
+            </pre>
+        </section>
+        <section>
+            <h2>Estructura basica</h2>
+            <p>La estructura basica de un apagina web es la siguiente:</p>
+            <pre>
+            &lt;!doctype html&gt;  -->tipo de documento
+            &lt;lang="es"&gt;      --> inicio
+                &lt;head&gt;       -->cabecera     
+                &lt;/head&gt;      -->fin de cabecera
+                &lt;body&gt;       -->cuerpo
+                &lt;/body&gt;      -->fin de cuerpo
+            &lt;/html&gt;          -->final de la página
+            </pre>
+        </section>
+        <section>
+            <h2>Título</h2>
+            <p>El titulo es el nombre que queremos darle al documento y aparecera en la pestaña cuando abramos el navegador, este aperece dentro de la cabecera</p>
+            <pre>
+             &lt;!doctype html&gt;  
+            &lt;lang="es"&gt;      
+                &lt;head&gt;  
+                    &lt;title&gt; Ejemplo de titulo &lt;/title&gt;
+                &lt;/head&gt;      
+                &lt;body&gt;      
+                &lt;/body&gt;     
+            &lt;/html&gt;   
+            </pre>
+        </section>
+        <section>
+            <h2>Metadatos</h2>
+            <p>Los metadatos son informacion sobre la propia página pero no aparecen visualmente en ella, estos se introducen en el head, por ejemplo el autor, la codificación...</p>
+            <pre>
+             &lt;!doctype html&gt;  
+            &lt;lang="es"&gt;      
+                &lt;head&gt;  
+                    &lt;title&gt;titulo&lt;/title&gt;
+                    &lt;meta charset="utf-8"&gt;                 -->codificación
+                    &lt;meta name="author" content="Fran"&gt;    -->autor
+                &lt;/head&gt;      
+                &lt;body&gt;      
+                &lt;/body&gt;     
+            &lt;/html&gt;
+            </pre>
+        </section>
+        <section>
+            <h2>Secciones de un documento</h2>
+            <p>Un documento html esta dividido en varias partes:</p>
+            <pre>
+            &lt;header&gt;&lt;/header&gt;  -->el encabezado de la página
+            &lt;nav&gt;&lt;/nav&gt;        -->la barra de navegación
+            &lt;aside&gt;&lt;/aside&gt;    -->suele ser un menu lateral
+            &lt;footer&gt;                 -->el pie de página
+                &lt;address&gt;            -->informacion de contacto
+                &lt;/address&gt;
+            &lt;/footer&gt;  
+             </pre>
+            <p>Y cada una de estas partes podemos dividirlas en secciones y estas en artículos</p>
+            <pre>
+            &lt;section&gt;           -->sección
+                &lt;article&gt;       -->artículo
+                &lt;/article&gt;
+                &lt;article&gt;
+                &lt;/article&gt;
+            &lt;/section&gt;
+            </pre>
+            <p>Incluso meter secciones dentro de articulos</p>
+            <pre>
+            &lt;section&gt;            -->sección
+                &lt;article&gt;        -->artículo
+                    &lt;section&gt;    -->sección
+                    &lt;/section&gt;
+                &lt;/article&gt;
+                &lt;article&gt;
+                    &lt;section&gt;
+                    &lt;/section&gt;
+                    &lt;section&gt;
+                    &lt;/section&gt;
+                &lt;/article&gt;
+            &lt;/section&gt;
+            </pre>
+        </section>
+        <section>
+            <h2>Títulos</h2>
+            <p>Estos tienen mas significado sintactico mas que visual ya que esta pensado para personas con alguna discapacidad para que cualquier asistente pueda apreciar el remarcado de ese titulo</p>
+            <pre>
+            &lt;h1&gt;titulo primer nivel&lt;/h1&gt;       -->mas grande(importante)
+            &lt;h2&gt;titulo de segundo nivel&lt;/h2&gt;
+            hasta
+            &lt;h6&gt;titulo de sexto nivel&lt;/h6&gt;     -->mas pequeño(menos importante)
+            </pre>
+        </section>
+        <section>
+            <h2>Agrupación</h2>
+            <p>El contenido de la página lo podemos agrupar de varias formas:</p>
+            <pre>
+            <b>Parrafos</b>
+            &lt;p&gt;contenido del párrafo&lt;/p&gt;
+            no se visualizan las tabulaciones ni los espacios repetidos
+            </pre>
+            <pre>
+            <b>Texto preformateado</b>
+            &lt;pre&gt;contenido&lt;/pre&gt;
+            utiliza letra monoespaciada y coloca un salto de linea al principio y otro al final
+            </pre>
+            <pre>
+            <b>Listas</b>
+            &lt;ul&gt;                -->lista desordenada
+                &lt;li&gt;&lt;/li&gt; -->elemento de la lista
+            &lt;/ul&gt;
+            
+            &lt;ol&gt;                -->lista ordenada
+                &lt;li&gt;&lt;/li&gt; -->elemento de la lista
+            &lt;/ol&gt;
+            
+            &lt;dl&gt;                -->lista de definición
+                &lt;dt&gt;            -->elemento a definir
+                    &lt;dd&gt;        -->definición
+                    &lt;/dd&gt;
+                &lt;/dt&gt;
+            &lt;/dl&gt;
+            </pre>
+        </section>
+        <section>
+            <h2>Linea horizontal</h2>
+            <p>Es basicamente una linea horizontal para dividir una parte de otra</p>
+            <hr>
+            <pre>
+            la etiqueta es --> &lt;hr&gt;
+            </pre>
+        </section>
+        <section>
+            <h2>Elementos semánticos de texto</h2>
+            <p>Estos son la bastardilla "cursiva", la negrita y el subrayado</p>
+            <pre>
+            <b>Bastardilla</b> --> su etiqueta es &lt;i&gt;
+            &lt;p&gt;texto &lt;i&gt;de&lt;/i&gt; ejemplo&lt;/p&gt; --> la palabra "de" estaria en cursiva
+            </pre>
+            <pre>
+            <b>Negrita</b> --> su etiqueta es &lt;b&gt;
+            &lt;p&gt;texto &lt;b&gt;de&lt;/b&gt; ejemplo&lt;/p&gt; --> la palabra "de" estaria en negrita
+            </pre>
+            <pre>
+            <b>Subrayado</b> --> su etiqueta es &lt;u&gt;
+            &lt;p&gt;texto &lt;u&gt;de&lt;/u&gt; ejemplo&lt;/p&gt; --> la palabra "de" estaria subrayada
+            </pre>
+            <pre>
+            <b>Recalcado</b> --> su etiqueta es &lt;em&gt;
+            Visualmente es como la cursiva pero esta tiene sentido sintactico.
+            </pre>
+            <pre>
+            <b>Strong</b> --> su etiqueta es &lt;strong&gt;
+            se utiliza para marcar que esa frase o palabra es importante 
+            </pre>
+            <pre>
+            <b>Small</b> --> su etiqueta es &lt;small&gt;
+            para rerpresentar la letra pequeña de los contratos
+            </pre>
+            <pre>
+            <b>Contenido obsoleto</b> --> su etiqueta es &lt;s&gt;
+            </pre>
+        </section>
+        <section>
+            <h2>Salto de linea</h2>
+            <p>El salto de linea se representa con la siguiente etiqueta</p>
+            <pre>
+             &lt;br&gt;
+            </pre>
+        </section>
+        <section>
+            <h2>Hiperenlaces</h2>
+            <p>Los hiperenlaces nos redireccionan a otras páginas o también a otra zona de nuestra página</p>
+            <pre>
+            <b>Enlace a una pagina externa</b> --> etiqueta &lt;a&gt;
+            &lt;a href="url al que queramos ir"&gt;texto que nos redirecciona al clicar &lt;/a&gt;
+            </pre>
+            <pre>
+            <b>Enlace interno</b> 
+            El elemento al que se quiere ir se marca con el siguiente atributo --> id="nombre"
+            
+            &lt;etiqueta cualquiera id="nombre que queramos"&gt;Elemento&lt;/etiqueta&gt;
+            
+            La referencia a ese elemento se pone de la siguiente manera
+            
+            &lt;a href="#id anterior"&gt;Elemento&lt;/a&gt;
+            
+            Para ir al principio del documento --> href="#top"
+            </pre>
+            <pre>
+            Para hacer lo anterior pero redireccionando a un anclaje de otra pagina se hace de la siguiente manera
+            
+            Se establece un anclaje con el taributo --> name="anclaje"
+            
+            Y se coloca en el enlace de la otra pagina el anclaje anterior
+            
+            &lt;a href="URL#anclaje"> elemento &lt;a&gt;
+            
+            Y clicando elemento nos llevara al anclaje
+            </pre>
+        </section>
+        <section>
+            <h2>Imagenes</h2>
+            <pre>
+            Su etiqueta es &lt;img&gt;
+            
+            La sintaxis es la siguiente
+            
+            &lt;img src="origen de la foto" width="ancho" heigth="alto" alt="texto alternativo"&gt;
+            </pre>
+        </section>
+        <section>
+            <h2>Tablas</h2>
+            <pre>
+            La sintaxis de una tabla es la siguiente
+            
+            &lt;table&gt;         -->inicio de tabla
+                &lt;th&gt;        -->Encabezado de la tabla
+                &lt;tr&gt;        -->fila
+                    &lt;td&gt;    -->columna
+                    &lt;/td&gt;
+                &lt;/tr&gt;     
+            &lt;/table&gt;        -->final de tabla
+            </pre>
+            <pre>
+            Para organizar la distribución de la tabla se utilizan estas etiquetas
+            
+            &lt;thead&gt;      -->encabezado de la tabla
+            &lt;tbody&gt;      -->cuerpo de la tabla
+            &lt;tfoot&gt;      -->sumario de la tabla
+            &lt;caption&gt;    -->leyenda de la tabla
+            </pre>
+        </section>
+    </article>
+</body>
+</html>
